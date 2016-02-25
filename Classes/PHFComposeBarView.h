@@ -32,6 +32,12 @@ extern NSString *const PHFComposeBarViewFrameEndUserInfoKey;          // NSValue
 // off can be useful in some complicated view setups.
 @property (assign, nonatomic) BOOL autoAdjustTopOffset;
 
+// The Background View Toolbar
+@property (strong, nonatomic, readonly) UIToolbar *backgroundView;
+
+// The Text Container containing the UITextView
+@property (strong, nonatomic, readonly) UIButton *textContainer;
+
 @property (strong, nonatomic, readonly) UIButton *button;
 
 // Default is a blue matching that from iMessage (RGB: 0, 122, 255).
